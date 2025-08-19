@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration Form</title>
+  <style>
+    h2 {
+      margin-bottom: 20px;
+      font-size: 20px;
+      color: #333;
+    }
+
+    .container {
+      background-color: aqua;
+      border-radius: 10px;
+      padding: 20px;
+      width: 100%;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .input-box {
+      flex: 1 1 calc(50% - 20px);
+      display: flex;
+      flex-direction: column;
+    }
+
+    
+    
+
+    .gen {
+      display: flex;
+      gap: 10px;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #e91e63, #673ab7);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+
+    label {
+      margin-bottom: 5px;
+    }
+
+    input {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Registration</h2>
+    <form class="form">
+      <div class="input-box">
+        <label for="firstname">First Name</label>
+        <input type="text" id="firstname" name="firstname" />
+      </div>
+      
+      <div class="input-box">
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname" name="lastname" />
+      </div>
+
+      <div class="input-box">
+        <label for="birthday">Birthday</label>
+        <input type="date" id="birthday" name="birthday" />
+      </div>
+
+      <div class="input-box full-width">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" />
+      </div>
+
+      <div class="input-box full-width">
+        <label>Gender</label>
+        <div class="gen">
+          <label><input type="radio" name="gender" value="male" /> Male</label>
+          <label><input type="radio" name="gender" value="female" /> Female</label>
+        </div>
+      </div>
+
+      <div class="input-box full-width">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" />
+      </div>
+
+      <!-- You can add a submit button here -->
+      <div class="input-box full-width">
+        <button type="submit">Register</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
