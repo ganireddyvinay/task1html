@@ -13,11 +13,18 @@
       box-sizing: border-box;
       font-family: Arial, Helvetica, sans-serif;
     }
+   body {
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
-    body {
-      background: black;
-      color: white;
-    }
+
+
+
+    
 
     /* HEADER */
     .header {
@@ -128,16 +135,17 @@
     }
 
     /* FOOTER */
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #111;
-    }
-
     footer a {
       margin: 0 8px;
       color: #3ae374;
       text-decoration: none;
+    }
+    footer {
+  margin-top: auto;
+  background: #111;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
     }
 
     /* MEDIA QUERIES */
