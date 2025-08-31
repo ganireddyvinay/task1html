@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+</head>
+<body>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">My Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--section about me-->
+<section id="about" class="py-5 text-center">
+  <div class="container">
+    <h2 class="mb-4">About Me</h2>
+    <p>Hello! My name is <strong>VINAY GANIREDDY</strong>. I am a beginner web developer learning HTML,css,javascript.</p>
+  </div>
+</section>
+<!-- 🔹 Skills Section -->
+<section id="skills" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="mb-4 text-center">My Skills</h2>
+    <div class="row">
+      <!-- Soft Skills -->
+      <div class="col-md-6">
+        <h4 class="text-center">Soft Skills</h4>
+        <ul class="list-group">
+          <li class="list-group-item">Teamwork</li>
+          <li class="list-group-item">Communication</li>
+          <li class="list-group-item">Time Management</li>
+        </ul>
+      </div>
+
+      <!-- Technical Skills -->
+      <div class="col-md-6">
+        <h4 class="text-center">Technical skills</h4>
+        <ul class="list-group">
+          <li class="list-group-item">html</li>
+          <li class="list-group-item">css</li>
+          <li class="list-group-item">bootstrap</li>
+        </ul>
+      </div>
+      </section>
+        
+
+<!-- 🔹 Education -->
+<section id="education" class="py-5">
+  <div class="container">
+    <h2 class="mb-4 text-center">Education Details</h2>
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped">
+        <thead class="table-dark">
+          <tr>
+            <th>School/College Name</th>
+            <th>Qualification</th>
+            <th>Grade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Right Way EM School</td>
+            <td>SSC</td>
+            <td>9.3</td>
+          </tr>
+          <tr>
+            <td>Sankethika College</td>
+            <td>Diploma</td>
+            <td>71%</td>
+          </tr>
+          <tr>
+            <td>Raghu Engineering College</td>
+            <td>B.Tech</td>
+            <td>8.2 </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+<!-- 🔹 Register Form -->
+<section id="registration-form" class="py-5">
+  <div class="container">
+    <h2 class="mb-4 text-center">Register</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form class="p-4 border rounded shadow bg-white">
+          <div class="mb-3">
+            <label class="form-label">Full Name</label>
+            <input type="text" class="form-control" placeholder="Enter your name" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" placeholder="Enter your email" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input type="password" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Gender</label><br>
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" name="gender" value="male">
+              <label class="form-check-label">Male</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" name="gender" value="female">
+              <label class="form-check-label">Female</label>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Hobbies</label><br>
+            <div class="form-check form-check-inline">
+              <input type="checkbox" class="form-check-input" value="Reading">
+              <label class="form-check-label">Reading</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="checkbox" class="form-check-input" value="Gaming">
+              <label class="form-check-label">Gaming</label>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Date of Birth</label>
+            <input type="date" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Favorite Subject</label>
+            <select class="form-select">
+              <option value="">--Select--</option>
+              <option>HTML</option>
+              <option>CSS</option>
+              <option>JavaScript</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Upload Resume</label>
+            <input type="file" class="form-control">
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="bg-dark text-white text-center py-3">
+  <p>© 2025 My Portfolio. All rights reserved.</p>
+</footer>
+</body>
+</html>
